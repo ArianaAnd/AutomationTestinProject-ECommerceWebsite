@@ -39,3 +39,5 @@ C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectW
 C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectWebsite\obj\Debug\TestingProjectWebsite.csproj.CopyComplete
 C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectWebsite\obj\Debug\TestingProjectWebsite.dll
 C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectWebsite\obj\Debug\TestingProjectWebsite.pdb
+C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectWebsite\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\Ariana\Desktop\AutomationTestinProject-ECommerceWebsite\TestingProjectWebsite\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb

@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using TestingProjectWebsite.PageObjectsModel;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
@@ -34,19 +36,21 @@ namespace TestingProjectWebsite.StepDefinitions
         [When(@"I access the cart to proceed to checkout")]
         public void WhenIAccessTheCartToProceedToCheckout()
         {
-            ScenarioContext.Current.Pending();
+            HomePage homePage = new HomePage(Driver);
+            homePage.proceedCheckoutButton.Click();
         }
         
         [When(@"I finish the checkout steps")]
         public void WhenIFinishTheCheckoutSteps()
         {
-            ScenarioContext.Current.Pending();
+            CheckoutPage checkoutPage = new CheckoutPage(Driver);
+            checkoutPage.ProceedCheckout();
         }
         
         [Then(@"My order is completed")]
         public void ThenMyOrderIsCompleted()
         {
-            ScenarioContext.Current.Pending();
+            Assert.IsTrue(Driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[3]/div/div/p/strong")).Text == "Your order on My Store is complete.");
         }
     }
 }
