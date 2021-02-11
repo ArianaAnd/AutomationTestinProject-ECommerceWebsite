@@ -16,4 +16,4 @@ Scenario: CreateAnUser
 
 Examples: 
 | userEmailValue          | userFirstNameValue | userLastNameValue | userPhoneValue | userAddressValue  | userPasswordValue | userAddressFirstNameValue | userAddressLastNameValue | userCityValue | userPostalCodeValue |
-|  test123xyz@test.com    | Andrisan           | Ariana            | 111-222-333    |Strada, 2          | password          | Andrisan                  | Ariana                   | Brasov        | 000000              |
+|  test100@test.com    | Andrisan           | Ariana            | 111-222-333    |Strada, 2          | password          | Andrisan                  | Ariana                   | Brasov        | 000000              |

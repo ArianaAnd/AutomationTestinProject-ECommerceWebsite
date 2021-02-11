@@ -17,13 +17,14 @@ namespace TestingProjectWebsite.PageObjectsModel
             {
                 _driver = driver;
 
-                _driverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(20));
+                _driverWait = new WebDriverWait(_driver, TimeSpan.FromSeconds(150));
 
                 _driverWait.IgnoreExceptionTypes();
             }
             public void EnterCreateAccountCredentials(UserDto user)
             {
-                System.Threading.Thread.Sleep(2000);
+               
+            System.Threading.Thread.Sleep(5000);
                 femaleTitleRadioButton.Click();
                 firstNameTextBox.Click();
                 firstNameTextBox.SendKeys(user.userFirstName);

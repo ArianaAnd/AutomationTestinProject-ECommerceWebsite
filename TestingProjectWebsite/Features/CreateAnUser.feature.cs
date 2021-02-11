@@ -76,7 +76,7 @@ namespace TestingProjectWebsite.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("CreateAnUser")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("test123xyz@test.com", "Andrisan", "Ariana", "111-222-333", "Strada, 2", "password", "Andrisan", "Ariana", "Brasov", "000000", null)]
+        [NUnit.Framework.TestCaseAttribute("test100@test.com", "Andrisan", "Ariana", "111-222-333", "Strada, 2", "password", "Andrisan", "Ariana", "Brasov", "000000", null)]
         public virtual void CreateAnUser(string userEmailValue, string userFirstNameValue, string userLastNameValue, string userPhoneValue, string userAddressValue, string userPasswordValue, string userAddressFirstNameValue, string userAddressLastNameValue, string userCityValue, string userPostalCodeValue, string[] exampleTags)
         {
             string[] @__tags = new string[] {

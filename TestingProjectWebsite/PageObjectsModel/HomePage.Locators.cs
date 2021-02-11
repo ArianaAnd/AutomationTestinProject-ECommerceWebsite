@@ -13,7 +13,7 @@ namespace TestingProjectWebsite.PageObjectsModel
         private IWebElement contactUsHomePageButton => _driver.FindElement(By.XPath("/html/body/div[2]/div[1]/header/div[2]/div/div/nav/div[2]/a"));
         private IWebElement signInHomePageButton => _driver.FindElement(By.XPath("/html/body/div/div[1]/header/div[2]/div/div/nav/div[1]/a"));
         public IWebElement createAccountButton => _driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[3]/div/div/div[1]/form/div/div[3]/button"));
-        public IWebElement signInButton => _driver.FindElement(By.XPath("/html/body/nav/div/div[2]/ul/li[2]/ul/li[2]/a"));
+        public IWebElement signInButton => _driver.FindElement(By.XPath("//*[@id='header']/div[2]/div/div/nav/div[1]/a"));
 
         //Home Icon
         public IWebElement homeButton => _driver.FindElement(By.XPath("/html/body/div/div[2]/div/div[1]/a[1]"));

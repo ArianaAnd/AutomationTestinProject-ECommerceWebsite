@@ -8,7 +8,7 @@ using TechTalk.SpecFlow.Assist;
 namespace TestingProjectWebsite.StepDefinitions
 {
     [Binding]
-    public class BuyAProductSteps:Hooks
+    public sealed class BuyAProductSteps:Hooks
     {
         private readonly ScenarioContext _scenarioContext;
 
@@ -16,15 +16,15 @@ namespace TestingProjectWebsite.StepDefinitions
         {
             _scenarioContext = scenarioContext;
         }
-        [Given(@"I am logged in with existing user")]
-        public void GivenIAmLoggedInWithExistingUser(Table table)
-        {
-           HomePage homePage = new HomePage(Driver);
-           homePage.Authentification();
-           var user = table.CreateInstance<UserDto>();
-           SignInPage signin = new SignInPage(Driver);
-           signin.EnterCredentials(user);
-        }
+        //[Given(@"I am logged in with existing user")]
+        //public void GivenIAmLoggedInWithExistingUser(Table table)
+        //{
+        //   HomePage homePage = new HomePage(Driver);
+        //   homePage.Authentification();
+        //   var user = table.CreateInstance<UserDto>();
+        //   SignInPage signin = new SignInPage(Driver);
+        //   signin.EnterCredentials(user);
+        //}
         
         [When(@"I add the T-shirt to cart")]
         public void WhenIAddTheT_ShirtToCart()

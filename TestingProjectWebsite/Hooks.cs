@@ -5,9 +5,15 @@ using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using AventStack.ExtentReports.Gherkin.Model;
+using Io.Cucumber.Messages;
 using TechTalk.SpecFlow;
+using TestingProjectWebsite.StepDefinitions;
 
 namespace TestingProjectWebsite
 {
@@ -23,11 +29,11 @@ namespace TestingProjectWebsite
         {
             private BrowserType _browserType;
             protected static IWebDriver Driver;
-
-            [BeforeScenario]
+            
+        [BeforeScenario]
             public void BeforeScenario()
             {
-                var browserType = TestContext.Parameters.Get("Browser", "Firefox");
+                var browserType = TestContext.Parameters.Get("Browser", "Chrome");
                 _browserType = (BrowserType) Enum.Parse(typeof(BrowserType), browserType);
                 if (Driver is null)
                 {
@@ -36,7 +42,8 @@ namespace TestingProjectWebsite
                 }
 
                 Driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
-            }
+
+        }
 
             public void ChooseDriverInstance(BrowserType browserType)
             {
